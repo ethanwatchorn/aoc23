@@ -34,12 +34,10 @@ def get_line_value(input):
     return 10*int(value_string[0]) + int(value_string[-1]) # Since strings are just arrays
 
 
-input_data = []
 total = 0
 # TODO: Still not too familiar with os.path stuff... Gotta dig into that, this is a temporary solution
-with open("c:/Users/ewatchorn/code/aoc/input.txt") as data:
+with open("C:/Users/ewatchorn/code/aoc23/Dec 1/Star 1/input.txt") as data:
     for line in data:
-        input_data.append(line.rstrip('\n'))
         data = line.rstrip('\n')
 
         line_val = get_line_value(data)
